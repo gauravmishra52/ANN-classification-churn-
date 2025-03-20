@@ -70,5 +70,12 @@ if prediction_proba > 0.5:
 else:
     st.write('The customer is not likely to churn.')
 
+import logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+logger.info("App is starting...")
+
+
 
 
